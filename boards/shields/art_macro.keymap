@@ -1,0 +1,36 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp L>, <&kp W>;
+        };
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <1>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LC(C)>, <&kp LC(V)>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+// --------------------------------------------
+// |   A(dropper)   |    ctrlZ (undo)   |    ctrlY(redo)    |    null    | 
+// |   G(fill)   |    L,W (lasso, DT wand)    |    E(eraser)    |    (copy, DT paste)    |  
+// |  null  |    SHIFT   |    CTRL    |    null    | 
+            bindings = <
+    &kp A    &kp LC(Z)    &kp LC(Y)    &kp N   
+    &kp G    &td0    &kp E    &td1  
+    &kp N &kp RSHIFT    &kp RCTRL    &kp N    
+
+            >;
+        };
+    };
+};
