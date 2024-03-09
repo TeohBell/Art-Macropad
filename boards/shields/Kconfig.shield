@@ -1,2 +1,2 @@
-config ART_MACRO
+config SHIELD_ART_MACRO
     def_bool $(shields_list_contains,art_macro)
