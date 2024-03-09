@@ -31,7 +31,8 @@
     &kp N &kp RSHIFT    &kp RCTRL    &kp N    
 
             >;
-    sensor-bindings = <&inc_dec_kp RBKT LBKT &inc_dec_kp SQT MINUS>;
+    sensor-bindings = <&inc_dec_kp RBKT LBKT 
+                        &inc_dec_kp SQT MINUS>;
         };
     };
 };
