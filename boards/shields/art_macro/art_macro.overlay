@@ -1,1 +1,9 @@
 #include "art_macro.dtsi"
+
+&top_encoder {
+    status = "okay";
+};
+
+&bott_encoder {
+    status = "okay";
+};
