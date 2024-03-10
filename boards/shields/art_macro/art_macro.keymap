@@ -23,19 +23,25 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// --------------------------------------------
-// |   A(dropper)   |    ctrlZ (undo)   |    ctrlY(redo)    |    null    | 
-// |   G(fill)   |    L,W (lasso, DT wand)    |    E(eraser)    |    (copy, DT paste)    |  
-// |  null  |    SHIFT   |    CTRL    |    null    | 
-            
-        bindings = <
-    &kp A    &kp LC(Z)    &kp LC(Y)    &kp N   
-    &kp G    &td0    &kp E    &td1  
-    &kp N &kp RSHIFT    &kp RCTRL    &kp N    
-
+            // ----------------------------------------------------------------------
+            // | A(dropper) |     ctrlZ (undo)     | ctrlY(redo) |       null       | 
+            // |   G(fill)  | L,W (lasso, DT wand) |  E(eraser)  | (copy, DT paste) |  
+            // |     BT     |         SHIFT        |    CTRL     |       null       | 
+            bindings = <
+                &kp A    &kp LC(Z)     &kp LC(Y)    &kp N   
+                &kp G    &td0          &kp E        &td1  
+                &mo 1    &kp RSHIFT    &kp RCTRL    &kp N
             >;
-    sensor-bindings = <&inc_dec_kp LBKT RBKT 
-                        &inc_dec_kp MINUS SQT>;
+
+            sensor-bindings = <&inc_dec_kp LBKT RBKT 
+                               &inc_dec_kp MINUS SQT
+            >;
         };
-    };
+
+        bt_layer{
+            bindings =<
+                &none         &none         &none         &none
+                &none         &none         &none         &bt BT_CLR
+                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none >;
+        };
 };
