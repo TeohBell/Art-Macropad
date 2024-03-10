@@ -13,7 +13,7 @@
         };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LC(C)>, <&kp LC(V)>;
         };
@@ -28,7 +28,7 @@
 // |   G(fill)   |    L,W (lasso, DT wand)    |    E(eraser)    |    (copy, DT paste)    |  
 // |  null  |    SHIFT   |    CTRL    |    null    | 
             
-bindings = <
+        bindings = <
     &kp A    &kp LC(Z)    &kp LC(Y)    &kp N   
     &kp G    &td0    &kp E    &td1  
     &kp N &kp RSHIFT    &kp RCTRL    &kp N    
