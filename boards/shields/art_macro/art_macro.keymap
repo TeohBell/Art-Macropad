@@ -25,7 +25,8 @@
 // |   A(dropper)   |    ctrlZ (undo)   |    ctrlY(redo)    |    null    | 
 // |   G(fill)   |    L,W (lasso, DT wand)    |    E(eraser)    |    (copy, DT paste)    |  
 // |  null  |    SHIFT   |    CTRL    |    null    | 
-            bindings = <
+            
+bindings = <
     &kp A    &kp LC(Z)    &kp LC(Y)    &kp N   
     &kp G    &td0    &kp E    &td1  
     &kp N &kp RSHIFT    &kp RCTRL    &kp N    
