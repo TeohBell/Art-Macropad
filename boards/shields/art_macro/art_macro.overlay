@@ -1,10 +1,12 @@
 / {
-    &top_encoder {
+    //&top_encoder {
     status = "okay";
     };
-    &bott_encoder {
+
+    //&bott_encoder {
     status = "okay";
     };
+
     chosen {
         zmk,kscan = &kscan0;
     };
