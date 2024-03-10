@@ -1,6 +1,6 @@
 if SHIELD_ART_MACRO
 
-config ZMK_KEYBOARD_NAME
+config ZMK_ART_MACRO
     default "art_macro"
 
 endif
