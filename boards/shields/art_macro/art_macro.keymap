@@ -30,7 +30,7 @@
             bindings = <
                 &kp A    &kp LC(Z)     &kp LC(Y)    &kp N   
                 &kp G    &td0          &kp E        &td1  
-                &none    &kp RSHIFT    &kp RCTRL    &kp N
+                &to 1    &kp RSHIFT    &kp RCTRL    &kp N
             >;
 
             sensor-bindings = <&inc_dec_kp LBKT RBKT 
@@ -45,7 +45,7 @@
             bindings = <
                 &kp T    &kp E    &kp S    &kp T  
                 &none    &none    &none    &bt BT_CLR_ALL  
-                &mo 1     &none    &none    &none
+                &to 0     &none    &none    &none
             >;
         };
     };
