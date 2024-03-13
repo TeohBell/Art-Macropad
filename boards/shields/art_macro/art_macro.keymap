@@ -45,7 +45,7 @@
             bindings = <
                 &kp T    &kp E    &kp S    &kp T  
                 &none    &none    &none    &bt BT_CLR_ALL  
-                &mo1     &none    &none    &none
+                &mo 1     &none    &none    &none
             >;
         };
     };
