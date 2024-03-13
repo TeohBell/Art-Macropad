@@ -36,6 +36,16 @@
             sensor-bindings = <&inc_dec_kp LBKT RBKT 
                                &inc_dec_kp MINUS SQT
             >;
+        bt_layer {
+            // ----------------------------------------------------------------------
+            // |    t    |    e    |    s    |    t    | 
+            // |   none  |  none   |  none   |BT Clear |  
+            // |  move   |  none   |  none   |  none   | 
+            bindings = <
+                &kp T    &kp E    &kp S    &kp T  
+                &none    &none    &none    &bt BT_CLR  
+                &mo1     &none    &none    &none
+            >;
         };
     };
 };
